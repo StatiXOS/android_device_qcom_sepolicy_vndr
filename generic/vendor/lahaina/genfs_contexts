@@ -303,6 +303,9 @@ genfscon sysfs /power/disk  u:object_r:vendor_sysfs_power_disk:s0
 genfscon sysfs /power/image_size    u:object_r:vendor_sysfs_power_imagesize:s0
 genfscon proc /sys/vm/swappiness    u:object_r:vendor_proc_swappiness:s0
 
+# net sysfs
+genfscon sysfs /devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/0306_01.01.00_IP_HW0/net u:object_r:sysfs_net:s0
+
 # UFS
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_mmc_host:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:4/block/sde/queue/discard_max_bytes u:object_r:vendor_sysfs_mmc_host:s0
