@@ -148,5 +148,3 @@ type vendor_sysfs_slab_zshandle_storeuser, fs_type, sysfs_type;
 type vendor_sysfs_slab_zspage_storeuser, fs_type, sysfs_type;
 
 type vendor_sysfs_usb_node, fs_type, sysfs_type;
-
-type sysfs_udc, fs_type, sysfs_type;
